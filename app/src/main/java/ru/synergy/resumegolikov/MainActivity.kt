@@ -2,6 +2,7 @@ package ru.synergy.resumegolikov
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ExpandableListAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -12,6 +13,10 @@ import ru.synergy.resumegolikov.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var listViewAdapter: ExpandableListAdapter
+    private lateinit var resumeList: List<String>
+    private lateinit var exp1 : HashMap<String, List<String>>
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        listViewAdapter = ExpandableListAdapter(this, resumeList, exp1)
+
 
         val navView: BottomNavigationView = binding.navView
 

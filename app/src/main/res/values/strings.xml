@@ -8,6 +8,7 @@
     <string name="tv_resume_age_city"><![CDATA[35 лет, г. Ногинск.]]></string>
     <string name="tv_resume_specialization"><![CDATA[Специализации: \nПрограммист, разработчик.]]></string>
     <string name="text_resume_main"><![CDATA[TextView]]></string>
+    <string name="experience_list">Опыт работы</string>
 
 
 </resources>
