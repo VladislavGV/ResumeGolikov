@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class ResumeViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is resume Fragment"
+        println(text)
     }
     val text: LiveData<String> = _text
 }

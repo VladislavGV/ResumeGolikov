@@ -28,7 +28,7 @@ class ResumeFragment : Fragment() {
         _binding = FragmentResumeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textResume
+        val textView: TextView = binding.textResumeTitle
         resumeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
