@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         listViewAdapter = ExpandableListAdapter(this, resumeList, exp1)
+        tvResumeList.setAdapter(listViewAdapter)
+
+        showList()
 
 
         val navView: BottomNavigationView = binding.navView
@@ -41,5 +44,14 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    private fun showList() {
+        resumeList = ArrayList()
+        exp1 = HashMap()
+
+        (resumeList as ArrayList<String>).add("Образовательный холдтнг Синергия")
+        (resumeList as ArrayList<String>).add("ООО О'КЕЙ")
+        (resumeList as ArrayList<String>).add("ООО Фреш Маркет")
     }
 }

@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@id/imageView2">
 
         <ExpandableListView
-            android:id="@+id/tv_resume_list"
+            android:id="@+id/tvResumeList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:choiceMode="multipleChoice"
