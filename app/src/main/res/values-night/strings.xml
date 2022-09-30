@@ -6,4 +6,5 @@
     <string name="tv_resume_specialization">Специализации: Программист, разработчик</string>
     <string name="text_resume_main">TextView</string>
     <string name="experience_list">Опыт работы</string>
+    <string name="resume_body">TextView</string>
 </resources>

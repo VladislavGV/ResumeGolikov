@@ -13,9 +13,7 @@ import ru.synergy.resumegolikov.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var listViewAdapter: ExpandableListAdapter
-    private lateinit var resumeList: List<String>
-    private lateinit var exp1 : HashMap<String, List<String>>
+
 
     private lateinit var binding: ActivityMainBinding
 
@@ -25,12 +23,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        listViewAdapter = ExpandableListAdapter(this, resumeList, exp1)
-        tvResumeList.setAdapter(listViewAdapter)
-
-        showList()
-
 
         val navView: BottomNavigationView = binding.navView
 
@@ -46,12 +38,4 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
-    private fun showList() {
-        resumeList = ArrayList()
-        exp1 = HashMap()
-
-        (resumeList as ArrayList<String>).add("Образовательный холдтнг Синергия")
-        (resumeList as ArrayList<String>).add("ООО О'КЕЙ")
-        (resumeList as ArrayList<String>).add("ООО Фреш Маркет")
-    }
 }
