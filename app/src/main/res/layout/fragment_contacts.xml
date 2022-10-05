@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Введите сообщение сюда"
+        android:hint="Написать в WhatsApp"
         android:lines="8"
         android:inputType="textMultiLine"
         android:gravity="left|top"
@@ -24,10 +24,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:text="Отправить"
         android:background="@color/green"
-        android:text="Submit"
-        android:textColor="#FFFFFF"
-        tools:ignore="TextContrastCheck" />
+        android:textColor="@android:color/white"/>
 
 
 </LinearLayout>
